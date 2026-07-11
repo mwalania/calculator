@@ -1,62 +1,77 @@
 *{
   font-family: monospace;
+  margin: 0;
+  padding: 0;
 }
-
 body{
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .calc-container{
   display: flex;
   flex-direction: column;
-  /* gap: 30px; */
-  background-color: aquamarine;
-  border: 1px solid brown;
-  border-radius: 8px;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 10px;
+  background-color: rgb(48, 46, 46);
+  color: white;
+  width: 350px;
   height: 480px;
-  width: 360px;
-  padding: 0 10px;
+  border: none;
+  border-radius: 12px;
+}
+h1{
+  color: black;
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
-.calc-container .display{
+.display{
+  background-color: rgb(114, 110, 110);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  /* text-align: right; */
+  margin: 10px;
+  padding-right: 10px;
   font-size: 20px;
-  background-color: rgb(176, 199, 199);
-  margin: 6px 0 10px 0;
-  border-radius: 4px;
-  padding: 30px 10px;
+  border: none;
+  border-radius: 5px;
+  height: 15%
 }
 
 .btn-container{
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  margin-top: 54px;
-  justify-content:center;
+  /* align-items: center; */
+  margin: 10px;
+  gap: 10px;
+  /* width: 80%; */
 }
 
-.clear .clear-btn{
-  background-color: red;
+.btn-row{
+  display: flex;
+  gap: 10px;
 }
 
-.buttons .del-btn{
-  background-color: orange;
-}
-
-.btn-container button{
+button{
   cursor: pointer;
-  border: none;
-  border-radius: 2px;
-  background-color: beige;
-  height: 50px;
-  width: 70px; 
-  /* padding: 10px 30px; */
-  margin: 6px;
-  /* display: block; */
-  /* flex: 1;*/ 
-} 
+  height: 65px;
+  width: 75px;
+  background-color: rgb(22, 20, 20);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.clear{
+  flex: 2;
+}
+.zero{
+  flex: 2;
+}
